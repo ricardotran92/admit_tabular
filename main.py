@@ -20,6 +20,6 @@ lor = st.number_input('Insert LOR')
 cgpa = st.number_input('Insert CGPA')
 research = st.radio('Choose Research', [0, 1], index=None)
 
-if gre is not None and toefl is not None and uni_rate is not None and sop is not None
+if gre is not None and toefl is not None and uni_rate is not None and sop is not None:
   if st.button('Predict'):
     
