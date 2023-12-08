@@ -22,4 +22,8 @@ research = st.radio('Choose Research', [0, 1], index=None)
 
 if gre is not None and toefl is not None and uni_rate is not None and sop is not None:
   if st.button('Predict'):
+    feature_vector = np.array([gre, toefl, uni_rate, sop, lor, cgpa, reseach])
+    label = str(model.predict((feature))[0])
+    st.header('Predict')
+    st.text(class_list[label])
     
