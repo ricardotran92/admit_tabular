@@ -1,2 +1,2 @@
-pickle
 numpy
+scikit-learn
